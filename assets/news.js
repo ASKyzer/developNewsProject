@@ -21,17 +21,20 @@ $("#submit").on("click", function() {
     'page': 0
     });
 
+
     $.ajax ({
         url: queryURL,
         method: "GET"
     }).then(function(response){
         for (i=0; i<limit; i++) {
             var entry = $("<div>");
+            console.log(response);
             
+
         }
     })
 })
 
-$("#clear").on("click", function() {
+//$("#clear").on("click", function() {
 
-})
+//})
