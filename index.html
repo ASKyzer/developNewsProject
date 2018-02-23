@@ -10,47 +10,78 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/style.css">
 
     <title>NYT Scraper</title>
   </head>
 
   <body>
     <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+      <div class="container center-align">
         <h1 class="display-4">New York Times Search</h1>
-        <p class="lead"></p>
       </div>
     </div>
     <div class="container input-container">
       <div class="row input-header">
         <h3>Search Parameters</h3>
       </div>
-    </div>
-    
+      <div class="row results-row">
+        <div class="col">
           <div class="row">
-              <input id="terms" type="text" name="" value="">
+            <div class="col">
+              <div class="row">
+                <label for="search-terms">Search Term:</label>
+              </div>
+              <div class="row">
+                <input id="terms" type="text" name="search-terms" value="" placeholder="enter your search term">
+              </div>
+            </div>
           </div>
           <div class="row">
-              <input id="limits" type="text" name="" value="">
+            <div class="col">
+              <div class="row">
+                <label for="limits">Number of Records to Retrieve:</label>
+              </div>
+              <div class="row">
+                <select id="limits" class="" name="search-limits">
+                  <option selected value="1">One</option>
+                  <option value="5">Five</option>
+                  <option value="10">Ten</option>
+                </select>
+              </div>
+            </div>
           </div>
           <div class="row">
-              <input id="startYear" type="text" name="" value="">
+            <div class="col">
+              <div class="row">
+                <label for="start-year">Start Year (Optional):</label>
+              </div>
+              <div class="row">
+                <input id="startYear" type="text" name="start-year" value="">
+              </div>
+            </div>
           </div>
           <div class="row">
-              <input id="endYear" type="text" name="" value="">
+            <div class="col">
+              <div class="row">
+                <label for="end-year">End Year (Optional):</label>
+              </div>
+              <div class="row">
+                <input id="endYear" type="text" name="end-year" value="">
+              </div>
+            </div>
           </div>
           <div class="row">
-              <input id="submit" type="submit" name="" value="">
-              <input id="clear" type="submit" name="" value="">
+            <button id="submit" type="submit" name="button">Search</button>
+            <button id="clear" type="submit" name="button">Clear</button>
           </div>
         </div>
       </div>
-
     </div>
+
     <div class="container results-container">
       <div class="row results-header">
-
+        <h3>Top Articles</h3>
       </div>
       <div id="articles-goes-here">
 
@@ -62,7 +93,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/news.js"></script>
 
   </body>
 </html>
