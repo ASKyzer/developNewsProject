@@ -43,7 +43,7 @@ $("#submit").on("click", function () {
         var results = response.response.docs;
         console.log(results);
         for (i = 0; i < limit; i++) {
-            var entry = $("<div>");
+            var entry = $('<div class="article">');
             //console.log(response);
             var headline = $("<h2>").text(results[i].headline.main);
             var byline = $("<h3>").text(results[i].byline.original);

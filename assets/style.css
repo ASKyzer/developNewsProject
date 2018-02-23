@@ -1,7 +1,7 @@
-
 h1 {
   color: white;
   text-align: center;
+  padding-left: 20px;
 }
 
 .jumbotron {
@@ -30,6 +30,7 @@ input {
 select {
   width: 100%;
   border-radius: 0%;
+  height: 35px;
 }
 
 option {
@@ -63,8 +64,15 @@ button {
 
 #submit {
   width: 120px;
+  height: 40px;
 }
 
 #clear {
   width: 120px;
+  height: 40px;
+}
+
+.article {
+  border-bottom: 2px solid black;
+  padding: 10px;
 }
