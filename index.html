@@ -17,64 +17,86 @@
 
 <body>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container center-align">
-            <h1 class="display-4">New York Times Search</h1>
-        </div>
+      <div class="container center-align">
+        <i class="far fa-newspaper newspaper-big"></i>
+
+        <h1 class="display-4">New York Times Search</h1>
+      </div>
     </div>
     <div class="container input-container">
-        <div class="row input-header">
-            <h3>Search Parameters</h3>
-        </div>
-        <div class="row results-row">
+      <div class="row input-header">
+        <i class="far fa-newspaper"></i>
+        <h3>Search Parameters</h3>
+      </div>
+      <div class="row input-row">
+        <div class="col">
+          <div class="row">
             <div class="col">
-                <div class="row">
-                    <div class="col">
-                        <div class="row">
-                            <label for="search-terms">Search Term:</label>
-                            </div>
-                            <div class="row">
-                                <input id="terms" type="text" name="search-terms" value="" placeholder="enter your search term">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <label for="limits">Number of Records to Retrieve:</label>
-                    <select id="limits" class="" name="search-limits">
-                        <option selected value="1">One</option>
-                        <option value="5">Five</option>
-                        <option value="10">Ten</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <input id="startYear" type="text" name="" value="">
-                </div>
-                <div class="row">
-                    <input id="endYear" type="text" name="" value="">
-                </div>
-                <div class="row">
-                    <input id="submit" type="submit" name="" value="Submit">
-                    <input id="clear" type="submit" name="" value="Clear">
-                </div>
+              <div class="row">
+                <label for="search-terms">Search Term:</label>
+              </div>
+              <div class="row">
+                <input id="terms" type="text" name="search-terms" value="" placeholder="enter your search term">
+              </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <label for="limits">Number of Records to Retrieve:</label>
+              </div>
+              <div class="row">
+                <select id="limits" class="" name="search-limits">
+                  <option selected value="1">One</option>
+                  <option value="5">Five</option>
+                  <option value="10">Ten</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <label for="start-year">Start Year (Optional):</label>
+              </div>
+              <div class="row">
+                <input id="startYear" type="text" name="start-year" value="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <label for="end-year">End Year (Optional):</label>
+              </div>
+              <div class="row">
+                <input id="endYear" type="text" name="end-year" value="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <button id="submit" type="submit" name="button">Search</button>
+            <button id="clear" type="submit" name="button">Clear</button>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
+
     <div class="container results-container">
-        <div class="row results-header">
+      <div class="row results-header">
+          <h3>Top Articles</h3>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="articles-goes-here">
         </div>
-        <div id="articles-goes-here">
-        </div>
+      </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/news.js"></script>
-</body>
 
 </html>
